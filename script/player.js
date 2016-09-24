@@ -67,7 +67,7 @@ cc.Class({
               let isHold = self.isTouchHold();
               if (!self.hasMoved && !self.isHold) {
                   var touchLoc = touch.getLocation();
-                  let atkPos   = self.node.parent.convertToNodeSpaceAR(atkPos);
+                  let atkPos   = self.node.parent.convertToNodeSpaceAR(touchLoc);
                   let atkDir   = cc.pSub( atkPos, self.node.position);
                   self.atkTargetPos = cc.pSub( self.node.position, cc.pMult(cc.pNormalize(atkDir), self.atkDist));
                   let atkPosWorld   = self.node.parent.convertToNodeSpaceAR(self.atkTargetPos);
