@@ -38,7 +38,7 @@ cc.Class({
               if (self.inputEnabled === false) {
                   return true;
               }
-              var touchLoc = touch.getLoocation();
+              var touchLoc = touch.getLocation();
               self.touchBeganLoc = touchLoc;
               self.moveToPos     = self.node.parent.convertToNodeSpaceAR(touchLoc);
               self.touchStartTime= Date.now();
@@ -48,7 +48,7 @@ cc.Class({
               if (self.inputEnabled === false) {
                   return;
               }
-              var touchLoc = touch.getLoocation();
+              var touchLoc = touch.getLocation();
               
               self.moveToPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
               if ( cc.pDistance(self.touchBeganLoc, touchLoc) > self.touchMoveThreshold ) {
@@ -66,7 +66,7 @@ cc.Class({
               });
               let isHold = self.isTouchHold();
               if (!self.hasMoved && !self.isHold) {
-                  var touchLoc = touch.getLoocation();
+                  var touchLoc = touch.getLocation();
                   let atkPos   = self.node.parent.convertToNodeSpaceAR(atkPos);
                   let atkDir   = cc.pSub( atkPos, self.node.position);
                   self.atkTargetPos = cc.pSub( self.node.position, cc.pMult(cc.pNormalize(atkDir), self.atkDist));
@@ -91,7 +91,7 @@ cc.Class({
     },
     
     isTouchHold () {
-        let timeDiff = Data.now() - this.touchStartTime;
+        let timeDiff = Date.now() - this.touchStartTime;
         return ( timeDiff >= this.touchThreshold );
     },
     
@@ -121,7 +121,7 @@ cc.Class({
         if (this.inputEnabled && this.moveToPos && this.isTouchHold()) {
             let dir = cc.pSub(this.moveToPos, this.node.position);
             let rad = cc.pToAngle(dir);
-            let deg = cc.radiansToDegress(rad);
+            let deg = cc.radiansToDegrees(rad);
             
             this.node.emit('update-dir', {
                 dir: cc.pNormalize(dir)
