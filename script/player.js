@@ -21,7 +21,7 @@ cc.Class({
         this.inputEnabled = false;
         this.isAttacking = false;
         this.isAlive = true;
-        this.registerInput();
+        // this.registerInput();
         this.atkTargetPos = cc.p(0,0);
         
         // set two values for dash
