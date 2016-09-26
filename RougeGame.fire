@@ -66,7 +66,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 960,
+      "width": 1136,
       "height": 640
     },
     "_children": [
@@ -86,7 +86,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 480,
+      "x": 568,
       "y": 320
     },
     "_skewX": 0,
@@ -301,9 +301,9 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Sprite",
+    "_name": "movest",
     "_objFlags": 0,
-    "_opacity": 255,
+    "_opacity": 128,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -322,8 +322,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 256,
-      "height": 256
+      "width": 224,
+      "height": 224
     },
     "_children": [],
     "_rotationX": 0,
@@ -332,8 +332,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -324,
-      "y": -167
+      "x": -439,
+      "y": -183
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -365,7 +365,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "af6ba819-e505-4f55-b2e8-236a404f6a0f"
+      "__uuid__": "e534fc63-c72b-4975-964b-73081584f9a7"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -417,10 +417,10 @@
     "_enabled": true,
     "_designResolution": {
       "__type__": "cc.Size",
-      "width": 960,
+      "width": 1136,
       "height": 640
     },
-    "_fitWidth": false,
+    "_fitWidth": true,
     "_fitHeight": true
   },
   {
