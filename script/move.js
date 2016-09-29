@@ -57,14 +57,14 @@ cc.Class({
     moveLeft : function () {
         if(this.moveState !== MoveState.LEFT){
             this.moveState = MoveState.LEFT;
-            this.node.scaleX = -1;
+            // this.node.scaleX = -1;
             cc.log("MoveStateChange :: LEFT");
         }
     },
     moveRight : function () {
         if(this.moveState !== MoveState.RIGHT){
             this.moveState = MoveState.RIGHT;
-            this.node.scaleX = 1;
+            // this.node.scaleX = 1;
             cc.log("MoveStateChange :: RIGHT");
         }
     },
